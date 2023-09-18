@@ -1,0 +1,73 @@
+h1{ color:rgb(255, 255, 255);
+    font-size: 200px;
+    text-align: right;
+    margin: 70px;
+    }
+    .introDiv {
+        color: rgb(173, 173, 173);
+        font-size: 30px;
+text-align: right;
+margin: 90px;
+margin-top: -5%;
+
+    }
+   .weightDiv{
+   
+    color: rgb(255, 255, 255);
+        text-align: center;
+      
+        font-size: 30px;
+    
+   }
+   .styleDiv{
+   
+    color: rgb(255, 255, 255);
+        text-align: center;
+      
+        font-size: 30px;
+
+   }
+   .spacingDiv{
+   
+    color: rgb(255, 255, 255);
+        text-align: center;
+        
+        font-size: 30px;
+    
+   }
+   .dDiv{
+    
+    color: rgb(255, 255, 255);
+        text-align: center;
+        
+        font-size: 30px;
+    }
+   
+   .textDiv{
+   
+        color: rgb(255, 255, 255);
+        text-align: center;
+      
+        font-size: 30px;
+   }
+   h2 {
+    color: rgb(71,130,201);
+   font-size: 60px;
+   margin-top: 200px;
+   
+   }
+   h3 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute; right: 90px;
+    background-color: rgb(255, 255, 255);
+   
+    
+
+   }
+img {
+    position:absolute; 
+margin-left: 61%;
+    width: 5%;
+    height: 10%;
+}
