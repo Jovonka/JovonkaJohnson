@@ -1,0 +1,168 @@
+html { 
+    font-family: 'Archivo Narrow', sans-serif;
+  
+}
+
+header{ 
+    
+    background-image: url("../images/space.jpeg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:aliceblue;
+}
+
+section{
+   
+    color: aliceblue;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    
+}
+h3{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 33px;
+}
+.column_container{
+    width: 960px;
+    margin:auto;
+    padding-top: 40px;
+    
+}
+
+header .column_container {
+    padding-top: 152px;
+    padding-bottom: 188px;
+}
+.intro_text {
+   
+    background-color: rgb(50, 0, 85);
+}
+.content_grid {
+    background-color: rgb(0, 0, 0);
+   
+}
+.closing_summary{
+    background-color: rgb(0, 198, 205);
+}
+
+
+.intro_text img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    float: right;
+    object-position: center;
+    display: inline;
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+
+ .intro_text {
+    padding-bottom: 20px;
+}
+.intro_text .column_container{
+    width : 959px;
+    margin: auto;
+    /* margin-bottom: 20px; */
+}
+
+.intro_text .column_container p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    
+}
+.p1{
+    line-height: 1.38;
+}
+
+.p3{
+    padding-bottom: 40px;
+}
+
+
+.content_grid{
+   
+    padding-bottom: 23px;
+
+}
+.content_grid h3 {
+  
+    padding-bottom: 17px;
+}
+.content_grid img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    object-position: center;
+    display: inline;
+    margin-right: 12px;
+}
+
+ul div{
+    width: 425px;
+}
+
+li{
+    display: block;
+    float: left;
+    width: 50%;
+    padding-bottom: 24px;
+}
+
+ul{
+    padding: 0;
+}
+
+ul::after{
+    
+    content: "";
+    display: block;
+    clear: both;
+   
+}
+
+h5{
+    font-size: 20px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+li p {
+    font-size: 18px;
+}
+
+.closing_summary{
+    
+    padding-bottom: 97px;
+}
+
+.closing_summary p{
+    width: 703px;
+    margin: auto;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+footer {
+   
+    padding-bottom: 43px;
+   color:aliceblue;
+    font-size: 18px;
+    background-color: black;
+}
