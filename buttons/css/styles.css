@@ -1,0 +1,539 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+
+#btn_hasbro {
+    display: inline-block;
+    padding: 34px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Hasbro_logo.svg/640px-Hasbro_logo.svg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFD700;
+    border: none;
+    width: 44px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+a#btn_hasbro {
+    margin-top:  70px;
+}
+a#btn_lyft {
+    margin-top:  70px;
+}
+a#btn_cartoonnetwork {
+    margin-top:  70px;
+}
+a.apple-button {
+    margin-top:  70px;
+}
+a.old-navy-button{
+    margin-top:  70px;
+}
+a.new-yorker-button{
+    margin-top:  70px;
+}
+a.custom-instagram-button{
+    margin-top:  70px;
+}
+a.custom-nike-button{
+    margin-top:  70px;
+}
+a.custom-facebook-button{
+    margin-top:  70px;
+}
+a.custom-exploding-kittens-button{
+    margin-top:  90px;
+}
+#btn_hasbro:hover {
+    animation: shake 0.5s;
+    background-color: #007ACC; /* Change color to blue on hover */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+#btn_lyft {
+    display: inline-block;
+    padding: 10px;
+    background-image: url(https://seeklogo.com/images/L/lyft-logo-EB7042D547-seeklogo.com.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 90px;
+    height: 57px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    transition: transform 1s, background-color 0.5s, color 0.5s;
+    transform: translateY(0);
+    color: #fff;
+}
+
+#btn_lyft:hover {
+    animation: liftUp 1s;
+    background-color: #ff1efb; /* Change color to yellow on hover */
+    color: #007ACC; /* Change text color to Lyft-themed blue on hover */
+}
+
+@keyframes liftUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px); /* Adjust the value for the desired lift height */
+    }
+}
+.apple-button {
+    display: inline-block;
+    background: black; /* Black background color */
+    color: white; /* White text color */
+    font-family: 'San Francisco', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 51px;
+    text-decoration: none;
+    border-radius: 83px;
+    text-align: center;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.apple-button:hover {
+    background: white; /* White background color on hover */
+    color: black; /* Black text color on hover */
+  
+}
+
+.apple-button:hover .apple-logo img {
+    filter: invert(100%); /* Invert the logo colors on hover */
+}
+
+.apple-logo {
+    position: absolute;
+    top: 6px;
+    left: 13px;
+    width: 70%;
+    height: 83%;
+    transition: filter 0.3s;
+    filter: invert(100%);
+}
+
+.apple-logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.old-navy-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #fff; /* White background */
+    border: none;
+    text-decoration: none;
+    border-radius: 50%; /* Rounded shape for the button */
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.logo {
+    width: 100px; /* Adjust the image width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    filter: invert(0); /* Invert the logo */
+    transition: filter 0.5s; /* Smooth inversion animation */
+}
+
+.rings {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 73%;
+    height: 100%;
+    background: #003366; 
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+
+.old-navy-button:hover .rings {
+    opacity: 1; /* Show the circle rings on hover */
+}
+
+.old-navy-button:hover .logo {
+    filter: invert(1); /* Invert the logo on hover */
+}
+
+.old-navy-button:hover {
+    background: #fff; /* Change back to white on hover */
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+.new-yorker-button {
+    display: inline-block;
+    text-decoration: none;
+    border: 0.2px solid #ff0000; /* Black border around the text */
+
+    padding: 10px 20px;
+    
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+    transform-origin: center;
+    perspective: 1000px;
+    perspective-origin: center;
+    overflow: hidden;
+}
+
+.logo-container {
+    position: relative;
+    width: 100px; /* Adjust the width as needed */
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    
+    transition: transform 0.3s;
+    transform-origin: center;
+}
+
+.new-yorker-button:hover .logo {
+    transform: rotateY(180deg); /* Invert the logo when hovering */
+  filter: invert(100%); /* Invert the logo colors to white */
+}
+
+.new-yorker-button:hover {
+    background: #000; /* Black background color when hovering */
+}
+
+.custom-instagram-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: none; /* Remove the gradient background */
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #000; /* Set the text color to black */
+    font-weight: bold;
+    font-size: 21px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova', sans-serif; /* Use the Proxima Nova font */
+}
+
+.instagram-logo {
+    margin-right: 10px;
+}
+
+.custom-instagram-button .instagram-logo img {
+    max-height: 30px;
+    vertical-align: middle;
+    transition: transform 0.5s; /* Add a smooth transition for the logo */
+}
+
+.custom-instagram-button:hover .instagram-logo img {
+    transform: rotate(360deg); /* Rotate the logo image on hover */
+}
+
+/* Define the button styles */
+.custom-cn-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 12px 7px;
+    border: 1px solid #000;
+    color: #000;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: uppercase;
+    background: transparent;
+    background-image: linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    font-family: 'CN Bold', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Add animation to the button */
+.custom-cn-button:hover {
+    transform: scale(1.1) rotate(20deg);
+    background-color: #000;
+    color: #fbff00;
+    text-shadow: 0 0 10px rgb(255, 0, 221), 0 0 10px  rgb(255, 6, 164),  0 0 10px  rgb(103, 1, 255);
+    animation: checkered 2s linear infinite; /* Add a checkered animation */
+    transition: color 0.3s; /* Smooth text color transition */
+}
+
+/* Add animation to the text */
+.custom-cn-button:hover .button-text {
+    animation: textAnimation 2s infinite;
+}
+
+@keyframes checkered {
+    0% {
+        background-position: 0 0, 10px 10px;
+    }
+    100% {
+        background-position: 20px 20px, 30px 30px;
+    }
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* Use Futura font for the button text and change the text color to white */
+.button-text {
+    font-family: 'Futura', sans-serif;
+    color: #fff; /* White text color */
+    font-size: 16px;
+   
+}
+
+/* Rest of the existing CSS remains unchanged */
+.custom-nike-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background:white;
+   border: 2px solid #000; /* Black border around the text */
+    padding: 37px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+.nike-logo {
+    position: relative;
+    width: 60px;
+    left: 26px;
+    height: 20px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png) no-repeat center/contain;
+  
+    transition: transform 0.3s;
+}
+
+.custom-nike-button:hover {
+    background: #000;
+    
+    transform: scale(1.05);
+}
+
+.custom-nike-button:hover .nike-logo {
+    transform: rotate(180deg);
+    left: 1px;
+    
+}
+.custom-facebook-button:hover .button-text{
+    left:10px;
+   top: 20px;
+}
+.custom-facebook-button {
+    display: inline-flex;
+    
+    justify-content: center;
+    text-decoration: none;
+    background: #1877f2; /* Facebook's blue color */
+    padding: 29px 20px;
+    border-radius: 5px;
+    color: #fff; /* White text color */
+    font-family: 'Klavika', sans-serif; /* Use the Klavika font */
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: lowercase;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.facebook-logo {
+    width: 20px;
+    height: 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png') no-repeat center/contain;
+    margin-right: 10px;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-facebook-button:before {
+    content: '';
+    position: absolute;
+    background: #ffffff; /* White background for animation */
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    transition: left 0.3s;
+}
+
+.custom-facebook-button .button-text {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-facebook-button:hover {
+    background: #164a8a; /* Darker blue color on hover */
+    transform: scale(1.05);
+ 
+}
+
+.custom-facebook-button:hover .facebook-logo {
+  transform: scale(5); 
+}
+.custom-exploding-kittens-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+   
+    color: white;
+    display: relative;
+    overflow: hidden;
+}
+
+.custom-exploding-kittens-button .text {
+    display: inline-block;
+    transform-origin: 50% 50%;
+    font-size: 18px;
+  
+    width: 100%;
+}
+
+.custom-exploding-kittens-button .logo {
+   
+    width: 54%;
+    margin-right: 10px;
+    
+    animation: shake 0.5s ease infinite; 
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+
+.custom-exploding-kittens-button .text {
+    transition: transform 0.3s;
+    display: none;
+}
+.custom-exploding-kittens-button:hover .text {
+    display: flex;
+}
+.custom-exploding-kittens-button:hover .logo{
+display: none;
+}
+.custom-exploding-kittens-button:hover {
+    background:black;
+    animation: explode 0.5s, colorChange 1.5s infinite alternate;
+    padding: 10px;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    50% {
+        color: orange;
+    }
+    100% {
+        color: yellow;
+    }
+}
+
+
+
+@keyframes logoBigger {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
