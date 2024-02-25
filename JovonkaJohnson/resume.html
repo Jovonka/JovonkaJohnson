@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ulv1woj.css">
+  <style>
+    footer{
+      margin-top: 40%;
+    }
+    body {
+   
+   min-height: 100vh;
+   margin: 0;
+   max-width: 100%;
+   width: 100%;
+   text-align: center;
+}
+
+.project-section {
+margin: 6%;
+/* max-width: 696px; */
+/* width: 58%; */
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-content: center;
+}
+
+.image-grid {
+padding: 10px;
+/* display: grid; */
+grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+gap: 20px;
+margin-top: 20px;
+justify-content: center;
+}
+
+.image-grid img {
+   width: 100%;
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+
+.smaller-inspiration {
+
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+    gap: 30px;
+    margin-top: 45px;
+    background-color: #f8f8f8;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 52px;
+}
+.smaller-inspiration img {
+  width: 65%;
+/* max-width: 100%; */
+height: auto;
+border-radius: 8px;
+overflow: hidden;
+}
+h3 {
+padding-top: 10%;
+text-align: center;
+}
+header p {
+text-align: center;
+}
+p {
+margin-right: 10%;
+margin-left: 10%;
+/* padding: 30%; */
+/* width: 39%; */
+text-align: left;
+}
+@media (max-width: 768px) {
+.smaller-inspiration {
+  grid-template-columns:auto;
+}
+}
+</style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="nav-home"><a href="index.html">Home</a></li>
+    
+      <li><a href="aboutMe.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="smaller-inspiration">
+ 
+    <div class="resume" >
+<img src="img/2Resume.jpg" alt="">
+</div>
+
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/jovonka-johnson/" class="footer-link">LinkedIn</a>
+        <a href="resume.html" class="footer-link">Resume</a>
+        <a href="Contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="image" alt="Enlarged Image" id="enlargedImg" class="modal-content">
+</div>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("enlargedImg");
+      const closeBtn = document.getElementsByClassName("close")[0];
+  
+      function openModal(src) {
+          modal.style.display = "block";
+          modalImg.src = src;
+      }
+  
+      function closeModal() {
+          modal.style.display = "none";
+      }
+  
+      // Function to handle click on images
+      function handleImageClick(event) {
+          const clickedImage = event.target;
+          const src = clickedImage.getAttribute("src");
+          openModal(src);
+      }
+  
+      // Attach click event to all images in the project section
+      const allImages = document.querySelectorAll(".resume img");
+      allImages.forEach((image) => {
+          image.addEventListener("click", handleImageClick);
+      });
+  
+      // Close modal when close button is clicked
+      closeBtn.onclick = closeModal;
+  
+      // Close modal when clicking outside the modal content
+      window.onclick = function (event) {
+          if (event.target === modal) {
+              closeModal();
+          }
+      };
+  });
+  </script>
+</body>
+</html>

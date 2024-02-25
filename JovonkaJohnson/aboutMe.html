@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ulv1woj.css">
+<style>
+    h2{
+        text-align: left;
+        padding-left: 0%;
+    }
+  .secret{
+    display: flex;
+    justify-content: center;
+  }
+.bubbles {
+    overflow:visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+footer{
+  margin-top: 40%;
+}
+@media (max-width: 768px) 
+        {
+  
+    img {
+     
+      display: none;
+    }
+    footer{
+      margin-top: 40%;
+    }
+        }
+
+</style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="nav-home"><a href="index.html">Home</a></li>
+    
+
+      <li><a href="aboutMe.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="about-me" class="about-me-section">
+
+    <div class="about-me-content">
+      <img src="PFP.png" alt="Jovonka Johnson" class="about-me-image">
+      
+      <div class="about-me-text">
+     
+        <h2>Hi! 👋</h2>
+        <p>
+          I'm Jovonka Johnson, an undergraduate majoring in Design and Human-Computer Interaction at Washington University in St. Louis.
+          I believe in the transformative power of art to inspire, challenge, and connect. Through my journey, I explore the intersection of technology and design, seeking innovative ways to communicate and evoke emotions. Beyond making art, I find joy in creating music, making websites (like this portfolio website), cherishing moments with my family, and playing video games!
+        </p>
+        <div class="bubbles"></div>
+      </div>
+    </div>
+   
+  </div>
+  <div class="secret">
+
+ <p>enjoy the bubbles :3</p>
+</div> 
+  <footer>
+   
+    <div class="footer-content">
+      <div class="footer-contact">
+        <a href="https://www.linkedin.com/in/jovonka-johnson/" class="footer-link">LinkedIn</a>
+        <a href="resume.html" class="footer-link">Resume</a>
+        <a href="Contact.html" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="image" alt="Enlarged Image" id="enlargedImg" class="modal-content">
+</div>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("enlargedImg");
+      const closeBtn = document.getElementsByClassName("close")[0];
+  
+      function openModal(src) {
+          modal.style.display = "block";
+          modalImg.src = src;
+      }
+  
+      function closeModal() {
+          modal.style.display = "none";
+      }
+  
+      // Function to handle click on images
+      function handleImageClick(event) {
+          const clickedImage = event.target;
+          const src = clickedImage.getAttribute("src");
+          openModal(src);
+      }
+  
+      // Attach click event to all images in the project section
+      const allImages = document.querySelectorAll(".image-grid img, .smaller-inspiration img");
+      allImages.forEach((image) => {
+          image.addEventListener("click", handleImageClick);
+      });
+  
+      // Close modal when close button is clicked
+      closeBtn.onclick = closeModal;
+  
+      // Close modal when clicking outside the modal content
+      window.onclick = function (event) {
+          if (event.target === modal) {
+              closeModal();
+          }
+      };
+  });
+  </script>
+</body>
+</html>

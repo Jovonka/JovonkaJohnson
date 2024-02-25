@@ -1,0 +1,785 @@
+body {
+    font-family: "new-order", sans-serif;
+    font-weight:200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #ffffff;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h1 {
+    font-family: "new-order", sans-serif;
+font-weight: 700;
+font-style: normal;
+  
+   text-align: center;
+    font-size: 35px;
+    color:#000000;
+}
+h2{
+    font-family: "new-order", sans-serif;
+font-weight: 700;
+font-style: normal;
+    margin-top: -2%;
+    padding-left: 5%;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+h3 {
+    color:#f8fbdd;
+    font-size: small;
+    text-align: center;
+}
+
+.category-dropdown {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.project {
+    width: 40%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #7a7159;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project a:hover {
+    transform: translateY(-3px);
+    color: #be6849; 
+}
+.animation p {
+    font-weight: bold;
+    text-decoration: none;
+    color: #7a7159;
+    display: inline-block;
+}
+p.caption{
+    font-weight:200;
+    color: rgb(106, 106, 106);
+    margin: 10px;
+    font-size: 10px;
+    
+}
+
+.pair {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.iframe-container {
+    width: 100%; /* Set to 100% for full width */
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.iframe-container iframe,
+.iframe-container video {
+    width: 100%;
+    height: 300px; /* Set an appropriate height */
+    border: none;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+
+    .iframe-container {
+        width: 100%;
+    }
+}
+
+/* Button Animation */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+body {
+    font-family: "new-order", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+ 
+    overflow-y: scroll;
+    width: 100%; 
+    height: 100%; 
+  
+  min-height: 990.667px; 
+
+  }
+ 
+  nav {
+    
+    text-align: left;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* Include your existing CSS styles here */
+
+.demo-reel-section {
+     padding: 50px 0;
+    text-align: center;
+    position: relative; /* Added position relative for absolute positioning */
+  }
+  
+  .video-title {
+    color: rgb(0, 0, 0); /* Set the color for the h2 */
+   
+
+  }
+  
+  .process-video {
+    width: 100%;; /* Make the video responsive */
+    height: 500px; /* Adjust the height as needed */
+  }
+  
+  /* Additional styles for project explanations go here */
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  .nav-home {
+    margin-right: auto; /* Pushes the home button to the left */
+  }
+  nav a {
+    color: #636363;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  nav a {
+    color: #636363;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s, color 0.3s;
+   
+    padding: 10px 20px;
+  
+  }
+  
+  nav a:hover {
+    background: #262626;
+    color: #ffffff;
+   
+  }
+  
+  #home {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  
+  .intro-section {
+    background: linear-gradient(254deg, #ffffff, #e2d0ff87, #ffffff, #cbfce28c);
+    background-size: 354% 360%;
+    animation: gradientAnimation 15s infinite;
+
+    padding: 100px;
+    color: #281e1f;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+  }
+  
+  
+  
+  .homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    position: relative;
+  }
+  
+  .project-explanation {
+    max-width: 800px; /* Set a maximum width for the project explanation */
+    margin: 0 auto; /* Center the project explanation horizontally */
+    text-align: left; /* Align text to the left within the project explanation */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .project-explanation h2 {
+    color: #262626; /* Set the color for the h2 */
+    text-decoration: none; /* Remove the underline */
+  }
+  .arrow-down {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Adjust arrow size */
+    border-right: 10px solid transparent; /* Adjust arrow size */
+    border-top: 15px solid white; /* Adjust arrow color and size */
+    cursor: pointer;
+  }
+  .project-explanation p {
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Set the line height for better readability */
+    color: #555; /* Adjust the text color as needed */
+    margin-bottom: 10px; /* Add margin at the bottom of each paragraph */
+  }
+  
+img{
+  cursor: pointer;
+}
+
+
+.about-me-section {
+  height: 972.667px;
+  background-color: #f4f4f4;
+  margin: 10%;
+  text-align: center;
+  /* overflow: hidden; */
+}
+  
+  .about-me-content {
+    padding-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: row-reverse;
+  }
+  .contact-section {
+    padding-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .about-me-image {
+    /* border-radius: 50%; */
+    width: 30%;
+    /* height: 200px; */
+    margin-right: 20px;
+}
+  
+  .about-me-text {
+    margin: 10%;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .about-me-text h2 {
+    color: #262626; /* Set the color for the h2 */
+  }
+  
+  .about-me-text p {
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Set the line height for better readability */
+    color: #555; /* Adjust the text color as needed */
+  }
+  
+  
+  
+  
+  .intro-text {
+    position: relative;
+    z-index: 1;
+    color: #281e1f;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .scroll-down,
+  .learn-more-btn  {
+    position: relative;
+    z-index: 1;
+    color: #2d2d2d;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border: 2px solid #272727;
+    padding: 10px 20px;
+    transition: background 0.3s, color 0.3s;
+  
+  }
+  
+  .scroll-down:hover,
+  learn-more-btn:hover{
+    background: #262626;
+    color: #ffffff;
+    border: 2px solid #ffffff00;
+  }
+  
+
+  .words {
+    margin: 5%;
+  }
+  
+  
+  
+  .project-item {
+    
+    padding: 10px;
+    margin: 10px;
+  
+    border-radius: 50%;
+    transition: transform 0.3s;
+    text-decoration: none;
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05);
+  }
+  .project-image {
+    width: 100%; 
+    border: 1px solid #e5e5e5;
+    border-radius: 5%;
+   
+  }
+  
+  
+  #intro-gif {
+    position: absolute;
+    top: 13%;
+    left: 39%;
+    width: 70%;
+    height: 88%;
+    object-fit: cover;
+    z-index: 1;
+    filter: contrast(90%) brightness(148%);
+  }
+  
+  .bubbles {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .bubble {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(1deg, #e8b0ff40, #ff809f6b, #ff84ff5c, #ffffff00);
+    border-radius: 50%;
+    animation: bubbleAnimation 40s infinite;
+  }
+  
+  @keyframes bubbleAnimation {
+    0% {
+      transform: translateY(100vh);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .demo-reel-section {
+    position: relative; /* Added position:relative for positioning text */
+  display: flex;
+  flex-direction: column; /* Added flex-direction: column to stack text below the video */
+  justify-content: center;
+  align-items: center;
+    height: 75vh;
+    
+   }
+
+  .demo-reel-text {
+    text-align: center;
+    margin-top: 10px; /* Adjust the spacing between video and text */
+    margin-bottom: 20px;
+}
+  
+  .demo-reel-text h2 {
+    color: rgb(0, 0, 0); /* Set the text color to white */
+  }
+  
+  .demo-link {
+    color: rgb(0, 0, 0);
+    text-decoration: underline; /* Add underline to the link */
+    display: block; /* Make the link a block element for better spacing */
+    margin-top: 5px; /* Adjust the spacing between text and link */
+  }
+  
+  .show-more-link {
+    display: flex;
+    color: #636363;
+    text-decoration: none;
+    /* font-size: 1.2em; */
+    transition: background 0.3s, color 0.3s;
+    padding: 16px 20px;
+    /* display: block; */
+    text-align: right;
+    margin-top: 20px;
+    justify-content: center;
+}
+  
+.show-more-link:hover {
+    /* background: #262626; */
+    color: #bc00b8;
+}
+  
+  .project-item h2 {
+    color: #262626; /* Adjust the color as needed */
+    text-decoration: none; /* Remove the underline */
+}
+
+  footer {
+    background-color: #1a1a1a;
+  
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    
+  }
+  .footer-contact {
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+
+  
+  
+  .footer-contact {
+    color: white;
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: white;
+   
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.765);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    overflow-y: auto;
+  }
+  
+  .modal img {
+    overflow-y: auto;
+    max-height: 80vh; 
+    border-radius: 5px;
+    display: block;
+  
+  }
+  
+  
+  .modal.show {
+    display: flex;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px; /* Increase the font size */
+    cursor: pointer;
+    padding: 10px; /* Increase the padding */
+  }
+  
+  
+  
+  .project-image {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .project-image:hover {
+    transform: scale(1.1);
+  }
+  
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+ 
+}
+
+.modal-content {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto; /* Center the modal content horizontally and vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #bbb;
+}
+
+
+
+
+  @media (max-width: 1068px) {
+    #intro-gif {
+      display: none;
+    }
+  }
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .intro-section {
+      padding: 50px;
+    }
+    .modal img {
+
+      overflow-y: auto;
+      max-height: 80vh;
+      border-radius: 5px;
+      display: block;
+  }
+    .intro-text {
+      margin-right: 0;
+    }
+  
+    #search-box {
+      margin-left: 10%;
+      transform: translateX(-50%);
+      width: 80%;
+    }
+  
+    #intro-gif {
+      left: 10%;
+      width: 80%;
+    }
+  
+   
+  }
+  
+  
+  @media (max-width: 480px) {
+    .intro-section {
+      padding: 30px;
+    }
+    .modal img {
+  
+      overflow-y: auto;
+      max-height: 80vh;
+      border-radius: 5px;
+      display: block;
+  }
+  
+    #search-box {
+      width: 90%;
+    }
+  
+    #intro-gif {
+      width: 100%;
+    }
+  
+    #project-list {
+      grid-template-columns: 1fr;
+    }
+  
+    
+  }@media (max-width: 768px) {
+    .modal-content {
+      padding: 5%; /* Adjust the padding for smaller screens */
+    }
+    .modal img {
+      
+      overflow-y: auto;
+      max-height: 80vh;
+      border-radius: 5px;
+      display: block;
+  }
+  }
+  @media (max-width: 768px) {
+    nav ul {
+      justify-content: center; /* Center the items */
+      flex-wrap: wrap; /* Wrap items into a new row */
+    }
+  
+    nav ul li {
+      margin-right: 1px;
+      margin-bottom: 1px; /* Add space between items */
+    }
+  
+    nav a {
+      font-size: 50%; /* Adjust font size for smaller screens */
+    }
+    .nav-home {
+    margin-right:0%;
+    }
+  
+  }
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 3%; /* Further reduce padding for even smaller screens */
+    }
+  }
+  .modal img {
+
+    overflow-y: auto;
+    max-height: 80vh;
+    border-radius: 5px;
+    display: block;
+  }
+  /* Adjust the font size for project details */
+  .project-details {
+    margin-top: 20px;
+    font-size: 1em; /* Adjust the font size */
+  }
+  
+  .project-details p {
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 0.8em; /* Adjust the font size for paragraphs */
+  }
+  
+  /* Additional styles for illustration-details */
+  .illustration-details {
+    text-align: left;
+    margin-top: -10%; /* Adjust the margin for smaller screens */
+    padding: 10%; /* Adjust the padding */
+  }
+  
+  @media (max-width: 768px) {
+    .illustration-details {
+      margin-top: -5%;
+      padding: 5%;
+    }
+    .modal img {
+      width: 100%;
+      overflow-y: auto;
+      max-height: 80vh;
+      border-radius: 5px;
+      display: block;
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .illustration-details {
+      margin-top: -3%;
+      padding: 3%;
+    }
+    .modal img {
+      width: 100%;
+      overflow-y: auto;
+      max-height: 80vh;
+      border-radius: 5px;
+      display: block;
+  }
+  }
+  
+  
